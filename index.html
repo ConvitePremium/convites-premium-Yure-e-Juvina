@@ -13,23 +13,23 @@
        link do repositório (URL_BASE abaixo). O resto da engine é automático
        ==================================================================== -->
   <meta name="theme-color" content="#f6c1cd">
-  <title>Convite 15 anos Sophia</title>
+  <title>Convite Yure & Juvina</title>
 
   <!-- Cole aqui a URL base do convite publicado no GitHub Pages -->
   <!-- Ex.: https://convitepremium.github.io/convite-premium-Joao/ -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Convite 15 anos Sophia">
+  <meta property="og:title" content="Convite Yure & Juvina">
   <meta property="og:description" content="Clique para abrir o convite">
-  <meta property="og:url" content="https://ConvitePremium.github.io/convites-premium-Sophia-15/">
-  <meta property="og:image" content="https://ConvitePremium.github.io/convites-premium-Sophia-15/assets/preview-whatsapp.jpg">
-  <meta property="og:image:secure_url" content="https://ConvitePremium.github.io/convites-premium-Sophia-15/assets/preview-whatsapp.jpg">
+  <meta property="og:url" content="https://ConvitePremium.github.io/convites-premium-Yure-e-Juvina/">
+  <meta property="og:image" content="https://ConvitePremium.github.io/convites-premium-Yure-e-Juvina/assets/preview-whatsapp.jpg">
+  <meta property="og:image:secure_url" content="https://ConvitePremium.github.io/convites-premium-Yure-e-Juvina/assets/preview-whatsapp.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Convite 15 anos Sophia">
+  <meta name="twitter:title" content="Convite Yure & Juvina">
   <meta name="twitter:description" content="Clique para abrir o convite">
-  <meta name="twitter:image" content="https://ConvitePremium.github.io/convites-premium-Sophia-15/assets/preview-whatsapp.jpg">
+  <meta name="twitter:image" content="https://ConvitePremium.github.io/convites-premium-Yure-e-Juvina/assets/preview-whatsapp.jpg">
   <!-- Fim do bloco de preview -->
 
   <link rel="preload" href="assets/opening.webp" as="image">
@@ -945,8 +945,8 @@
     $("rsvpBack").addEventListener("click",reset);$("rsvpDeclineBack").addEventListener("click",reset);
     count.addEventListener("change",()=>{names.replaceChildren();for(let i=1;i<=Number(count.value);i++){const label=document.createElement("label");label.htmlFor="rsvpName"+i;label.textContent="Nome da pessoa "+i;const input=document.createElement("input");input.id="rsvpName"+i;input.name="guest";input.required=true;input.maxLength=100;input.autocomplete="off";input.placeholder="Nome completo";names.append(label,input)}});
     function send(message){const num=String(window.CONFIG?.whatsapp?.numero||"5588994897535").replace(/\D/g,"");const url="https://wa.me/"+num+"?text="+encodeURIComponent(message);const win=window.open(url,"_blank","noopener,noreferrer");if(!win){status.textContent="Caso o WhatsApp não abra, toque no link abaixo.";const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Abrir WhatsApp";status.append(document.createElement("br"),a)}else{status.textContent="Mensagem preparada! Envie-a no WhatsApp para concluir a confirmação."}}
-    form.addEventListener("submit",e=>{e.preventDefault();if(!form.reportValidity())return;const guests=[...names.querySelectorAll("input")].map(el=>el.value.trim());if(!guests.length||guests.some(n=>!n)){status.textContent="Preencha todos os nomes.";return}send("Olá! Confirmo nossa presença na festa da Sophia.\n\nQuantidade de pessoas: "+guests.length+"\nConvidados:\n"+guests.map((n,i)=>(i+1)+". "+n).join("\n")+"\n\nEstamos felizes em participar desse momento especial!")});
-    $("rsvpDeclineSend").addEventListener("click",()=>send("Olá! Agradeço muito pelo convite para a festa da Sophia, mas infelizmente não poderei comparecer. Desejo uma celebração maravilhosa!"));
+    form.addEventListener("submit",e=>{e.preventDefault();if(!form.reportValidity())return;const guests=[...names.querySelectorAll("input")].map(el=>el.value.trim());if(!guests.length||guests.some(n=>!n)){status.textContent="Preencha todos os nomes.";return}send("Olá! Confirmo nossa presença na festa do Yure e Juvina.\n\nQuantidade de pessoas: "+guests.length+"\nConvidados:\n"+guests.map((n,i)=>(i+1)+". "+n).join("\n")+"\n\nEstamos felizes em participar desse momento especial!")});
+    $("rsvpDeclineSend").addEventListener("click",()=>send("Olá! Agradeço muito pelo convite para a festa do Yure e Juvina, mas infelizmente não poderei comparecer. Desejo uma celebração maravilhosa!"));
   })();
   </script>
 </body>
